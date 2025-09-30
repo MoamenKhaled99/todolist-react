@@ -1,0 +1,14 @@
+/* Styles for delete button in TodoItem */
+.delete-btn {
+  background: #e0245e;
+  color: #fff;
+  border: none;
+  padding: 0.4rem 0.8rem;
+  border-radius: 4px;
+  margin-left: 1rem;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+.delete-btn:hover {
+  background: #c81e4a;
+}

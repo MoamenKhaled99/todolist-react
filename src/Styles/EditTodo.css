@@ -1,0 +1,20 @@
+/* Styles for edit/update buttons in TodoItem */
+.edit-btn, .update-btn, .cancel-btn {
+  background: #f1c40f;
+  color: #fff;
+  border: none;
+  padding: 0.4rem 0.8rem;
+  border-radius: 4px;
+  margin-left: 0.5rem;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+.edit-btn:hover, .update-btn:hover {
+  background: #d4ac0d;
+}
+.cancel-btn {
+  background: #888;
+}
+.cancel-btn:hover {
+  background: #555;
+}

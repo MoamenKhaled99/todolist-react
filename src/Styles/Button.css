@@ -1,0 +1,45 @@
+/* Generic Button styles */
+.btn {
+  font-size: 1rem;
+  padding: 0.4rem 1rem;
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
+  margin-left: 0.5rem;
+  transition: background 0.2s;
+}
+.btn-add {
+  background: #4caf50;
+  color: #fff;
+}
+.btn-add:hover {
+  background: #388e3c;
+}
+.btn-delete {
+  background: #e0245e;
+  color: #fff;
+}
+.btn-delete:hover {
+  background: #c81e4a;
+}
+.btn-update {
+  background: #f1c40f;
+  color: #fff;
+}
+.btn-update:hover {
+  background: #d4ac0d;
+}
+.btn-edit {
+  background: #3498db;
+  color: #fff;
+}
+.btn-edit:hover {
+  background: #217dbb;
+}
+.btn-default {
+  background: #888;
+  color: #fff;
+}
+.btn-default:hover {
+  background: #555;
+}

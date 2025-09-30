@@ -1,0 +1,27 @@
+/* Styles for Navbar component */
+.navbar {
+  background: #f1356d;
+  color: #fff;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.navbar h1 {
+  margin: 0;
+  font-size: 1.5rem;
+}
+.navbar .links {
+  display: flex;
+  gap: 1rem;
+}
+.navbar .links a {
+  color: #fff;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  transition: background 0.2s;
+}
+.navbar .links a:hover {
+  background: #e0245e;
+}
