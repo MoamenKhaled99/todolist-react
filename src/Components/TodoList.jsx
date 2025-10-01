@@ -1,32 +1,17 @@
 import TodoItem from "./TodoItem";
-import { toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
 
-const Todolist = ({ todos, setTodos, title }) => {
+const TodoList = ({ todos, deleteTodo, updateTodo, title }) => {
     const handleDelete = (id) => {
-        const todo = todos.find(todo => todo.id === id);
-        if (todo.status === 'In progress') {
-            toast.error("Cannot delete a todo that is In progress.");
-            return;
-        }
-        fetch(`http://192.168.1.221:5000/todos/${id}`, {
-            method: 'DELETE'
-        }).then(() => {
-            setTodos(todos.filter(todo => todo.id !== id));
-        });
+        deleteTodo(id);
     };
 
     const handleUpdate = (id, updatedFields) => {
-        fetch(`http://192.168.1.221:5000/todos/${id}`, {
-            method: 'PUT',
-            headers: { 'Content-Type': 'application/json' },
-            body: JSON.stringify({ ...todos.find(todo => todo.id === id), ...updatedFields })
-        })
-            .then(res => res.json())
-            .then(updatedTodo => {
-                setTodos(todos.map(todo => todo.id === id ? updatedTodo : todo));
-            });
+        const todo = todos.find((todo) => todo.id === id);
+        if (todo) {
+            updateTodo(id, { ...todo, ...updatedFields });
+        }
     };
 
     return (
@@ -51,4 +36,4 @@ const Todolist = ({ todos, setTodos, title }) => {
     );
 }
 
-export default Todolist;
+export default TodoList;

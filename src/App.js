@@ -9,6 +9,7 @@ import "./Styles/SearchBar.css";
 import "./Styles/FilterSelect.css";
 import "./Styles/DeleteTodo.css";
 import "./Styles/EditTodo.css";
+import "./Styles/Pagination.css";
 import "./Styles/App.css";
 import "./Styles/404.css";
 import NotFound from "./Components/404";
