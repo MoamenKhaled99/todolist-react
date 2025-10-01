@@ -7,15 +7,9 @@ import SearchBar from '../Components/SearchBar';
 
 
 const Home = () => {
-    const { data: todos, isPending, error } = useTodo('http://192.168.1.221:5000/todos');
-    const [localTodos, setLocalTodos] = useState([]);
+    const { localTodos, setLocalTodos, isPending, error } = useTodo('http://192.168.1.221:5000/todos');
     const [filter, setFilter] = useState("");
     const [search, setSearch] = useState("");
-
-
-    React.useEffect(() => {
-        if (todos) setLocalTodos(todos);
-    }, [todos]);
 
     const filteredTodos = localTodos
         .filter(todo => (filter ? todo.status === filter : true))

@@ -1,10 +1,13 @@
 import TodoItem from "./TodoItem";
+import { toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
+
 
 const Todolist = ({ todos, setTodos, title }) => {
     const handleDelete = (id) => {
         const todo = todos.find(todo => todo.id === id);
         if (todo.status === 'In progress') {
-            alert("Cannot delete a todo that is In progress.");
+            toast.error("Cannot delete a todo that is In progress.");
             return;
         }
         fetch(`http://192.168.1.221:5000/todos/${id}`, {
@@ -30,10 +33,10 @@ const Todolist = ({ todos, setTodos, title }) => {
         <div className="todo-list">
             <h2>{title}</h2>
             <div className="todo-list-header">
-                <span className="todo-col-task">Task</span>
-                <span className="todo-col-status">Status</span>
-                <span className="todo-col-date">Date</span>
-                <span className="todo-col-actions"></span>
+                <div className="todo-col-task">Task</div>
+                <div className="todo-col-status">Status</div>
+                <div className="todo-col-date">Date</div>
+                <div className="todo-col-actions"></div>
             </div>
             {todos.length === 0 ? (
                 <p>No todos found.</p>

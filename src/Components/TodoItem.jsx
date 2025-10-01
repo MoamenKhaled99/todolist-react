@@ -21,7 +21,7 @@ const TodoItem = ({ todo, onDelete, onUpdate }) => {
                     <span className="todo-col-status">
                         <select value={editStatus} onChange={e => setEditStatus(e.target.value)}>
                             <option value="todo">todo</option>
-                            <option value="in progress">In progress</option>
+                            <option value="In progress">In progress</option>
                             <option value="done">done</option>
                         </select>
                     </span>

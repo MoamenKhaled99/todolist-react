@@ -12,6 +12,8 @@ import "./Styles/EditTodo.css";
 import "./Styles/App.css";
 import "./Styles/404.css";
 import NotFound from "./Components/404";
+import { ToastContainer } from "react-toastify";
+import "./Styles/toast.css";
 
 function App() {
   return (
@@ -28,6 +30,7 @@ function App() {
             </Route>
           </Switch>
         </div>
+        <ToastContainer />
       </div>
     </Router>
   );

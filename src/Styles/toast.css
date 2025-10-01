@@ -1,0 +1,17 @@
+/* Custom styles for react-toastify toasts */
+.toastify-toast {
+  font-family: 'Montserrat', Arial, sans-serif;
+  font-size: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+
+.toastify-toast--error {
+  background: #ff3860;
+  color: #fff;
+}
+
+.toastify-toast--success {
+  background: #23d160;
+  color: #fff;
+}
