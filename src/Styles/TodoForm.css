@@ -6,20 +6,43 @@
   padding: 1rem;
   background: #fff;
   border-radius: 8px;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.07);
   margin-bottom: 1rem;
+  width: 100%;
 }
-.todo-form input, .todo-form select {
+.todo-form select {
+  width: 100%;
   padding: 0.5rem;
   border-radius: 4px;
   border: 1px solid #ccc;
   border-color: aquamarine;
 }
-.todo-form button {
-  background: #f1356d;
+
+.todo-form-input {
+  display: flex;
+  border-radius: 8px;
+  overflow: hidden;
+  border: 1px solid #ccc;
+  border-color: aquamarine;
+}
+
+.todo-form-input input {
+  flex: 1;
+  padding: 0.5rem;
+  border: none;
+  outline: none;
+  background: #fff;
+}
+
+.todo-form-input button {
+  background-color: aquamarine;
   color: #fff;
   border: none;
   padding: 0.5rem 1rem;
-  border-radius: 4px;
   cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.todo-form-input button:hover {
+  background: #e0245e;
 }

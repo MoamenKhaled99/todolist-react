@@ -1,11 +1,26 @@
 /* Styles for FilterSelect component */
-.filter-select {
-  margin: 1rem;
-  
-}
 .filter-select select {
-  padding: 1rem;
-  border-radius: 4px;
-  border: 1px solid #937262;
-  font-size: larger;
+  width: 100%;
+  padding: 0.5rem;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  border-color: aquamarine;
+  background: #fff;
+  font-family: "Quicksand", sans-serif;
+  font-size: 1rem;
+  font-weight: 500;
+  color: #333;
+  cursor: pointer;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.07);
+}
+
+.filter-select select:focus {
+  outline: none;
+  border-color: #f1356d;
+  box-shadow: 0 0 0 3px rgba(241, 53, 109, 0.1);
+}
+
+.filter-select select:hover {
+  border-color: #f1356d;
 }

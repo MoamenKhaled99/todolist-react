@@ -1,38 +1,97 @@
 /* Styles for TodoList component */
+.todo-list-container {
+  width: 100%;
+  margin-bottom: 1rem;
+}
+
 .todo-list {
   padding: 1rem;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.07);
+  width: 100%;
 }
+
+.todo-list h2 {
+  margin: 0 0 1rem 0;
+  font-family: "Quicksand", sans-serif;
+  font-weight: 600;
+  color: #333;
+}
+
+.todo-list-content {
+  width: 100%;
+}
+
 .todo-list-header {
   display: flex;
   width: 100%;
+  min-width: 600px;
   font-weight: bold;
   margin-bottom: 1rem;
-  background: #f1f1f1;
-  padding: 0.5rem 1rem;
+  background-color: aquamarine;
+  padding: 1rem 0;
   border-radius: 8px;
+  font-family: "Quicksand", sans-serif;
+  font-weight: 600;
+  color: #555;
 }
+
 .todo-list-row {
   display: flex;
   width: 100%;
   align-items: center;
-  background: #f9f9f9;
-  margin-bottom: 0.5rem;
-  padding: 0.75rem 1rem;
+  background: #ffffff3c;
+  margin-bottom: 0.75rem;
+  padding: 1rem 0;
   border-radius: 8px;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.07);
+  border: 1px solid #f0f0f0;
+  transition: box-shadow 0.2s ease, transform 0.2s ease;
 }
+
+.todo-list-row:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transform: translateY(-1px);
+}
+
 .todo-col-task,
 .todo-col-status,
 .todo-col-date,
 .todo-col-actions {
   flex: 1;
-  width: 100%;
+  min-width: 0;
   text-align: left;
-  overflow-wrap: anywhere;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
   display: flex;
   align-items: center;
+  font-family: "Quicksand", sans-serif;
+  padding: 0 0.5rem;
 }
+
+.todo-col-task {
+  flex: 2;
+}
+
+.todo-col-status {
+  flex: 1;
+}
+
+.todo-col-date {
+  flex: 1.5;
+}
+
 .todo-col-actions {
+  flex: 1;
   gap: 0.5rem;
   justify-content: flex-start;
+}
+
+.no-todos {
+  text-align: center;
+  color: #666;
+  font-style: italic;
+  padding: 2rem;
+  font-family: "Quicksand", sans-serif;
 }

@@ -9,7 +9,7 @@ import SearchBar from '../Components/SearchBar';
 
 
 const Home = () => {
-    const { localTodos, addTodo, deleteTodo, updateTodo, isPending, error } = useTodo('http://192.168.1.221:5000/todos');
+    const { localTodos, addTodo, deleteTodo, updateTodo, isPending, error } = useTodo('http://172.20.10.3:5000/todos');
     const [filter, setFilter] = useState("");
     const [search, setSearch] = useState("");
 
@@ -21,8 +21,10 @@ const Home = () => {
     return (
         <div className="home">
             <TodoForm addTodo={addTodo} todos={localTodos} />
-            <FilterSelect value={filter} onChange={setFilter} />
-            <SearchBar value={search} onChange={setSearch} />
+            <div className="controls-wrapper">
+                <FilterSelect value={filter} onChange={setFilter} />
+                <SearchBar value={search} onChange={setSearch} />
+            </div>
             <TodoList
                 todos={paginatedTodos}
                 deleteTodo={deleteTodo}

@@ -1,16 +1,19 @@
 /* Styles for Navbar component */
 .navbar {
-  background: #f1356d;
+  background-color: aquamarine;
   color: #fff;
   padding: 1rem 2rem;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  width: 100%;
+  box-sizing: border-box;
+  margin-bottom: 1rem;
 }
+
 .navbar h1 {
-  margin: 0;
+  margin: 0 auto;
   font-size: 1.5rem;
 }
+
 .navbar .links {
   display: flex;
   gap: 1rem;

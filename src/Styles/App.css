@@ -11,3 +11,23 @@
   font-family: "Quicksand";
   color: #333;
 }
+
+/* Content container with max-width */
+.content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+/* Controls wrapper for SearchBar and FilterSelect */
+.controls-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 1rem;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.07);
+  margin-bottom: 1rem;
+  width: 100%;
+}

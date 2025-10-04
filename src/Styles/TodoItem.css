@@ -9,6 +9,43 @@
   border-radius: 6px;
   width: 100%;
 }
+
 .todo-item span {
   font-size: 1rem;
+}
+
+/* Styles for TodoItem columns within TodoList structure */
+.todo-col-task input {
+  width: 100%;
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-color: aquamarine;
+  border-radius: 4px;
+  font-family: "Quicksand", sans-serif;
+  font-size: 1rem;
+  background: #fff;
+  outline: none;
+}
+
+.todo-col-task input:focus {
+  border-color: #f1356d;
+  box-shadow: 0 0 0 2px rgba(241, 53, 109, 0.1);
+}
+
+.todo-col-status select {
+  width: 100%;
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-color: aquamarine;
+  border-radius: 4px;
+  font-family: "Quicksand", sans-serif;
+  font-size: 1rem;
+  background: #fff;
+  cursor: pointer;
+  outline: none;
+}
+
+.todo-col-status select:focus {
+  border-color: #f1356d;
+  box-shadow: 0 0 0 2px rgba(241, 53, 109, 0.1);
 }

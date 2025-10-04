@@ -1,20 +1,38 @@
 /* Styles for SearchBar component */
 .search-bar {
   display: flex;
-  gap: 0.5rem;
-  margin: 1rem;
+  border-radius: 8px;
+  overflow: hidden;
+  border: 1px solid #ccc;
+  border-color: aquamarine;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.07);
 }
+
 .search-bar input {
   flex: 1;
   padding: 0.5rem;
-  border-radius: 4px;
-  border: 1px solid #ccc;
+  border: none;
+  outline: none;
+  background: #fff;
+  font-family: "Quicksand", sans-serif;
 }
+
+.search-bar input::placeholder {
+  color: #999;
+  font-style: italic;
+}
+
 .search-bar button {
   background: #f1356d;
   color: #fff;
   border: none;
   padding: 0.5rem 1rem;
-  border-radius: 4px;
   cursor: pointer;
+  transition: background 0.2s ease;
+  font-family: "Quicksand", sans-serif;
+  font-weight: 500;
+}
+
+.search-bar button:hover {
+  background: #e0245e;
 }
